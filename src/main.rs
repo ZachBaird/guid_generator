@@ -15,6 +15,8 @@ fn main() {
         result += slice;
     }
 
+    result = result.to_lowercase();    
+
     ctx.set_contents(result.to_owned()).unwrap();
     println!("Guid: {result}");
     println!("{}", "Copied to clipboard.".green().bold());
